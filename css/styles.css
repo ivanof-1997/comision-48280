@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Righteous&family=Roboto:ital,wght@0,700;1,300;1,400&family=Rubik+Wet+Paint&display=swap');
+
+body {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: #fff;
+
+
+
+
+}
+
+
+
+header {
+    background-color: black;
+    width: 100%;
+
+
+
+
+}
+
+header img {
+    width: 7rem;
+    margin: 1rem;
+
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+
+
+}
+
+.nav-link {
+    transition: all .3s linear .3s;
+}
+
+.nav-link:hover {
+    background-color: orange;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.fondoinicio {
+    background: url('img/fondo-1.jpg');
+    width: 100%;
+
+
+
+
+
+
+}
+
+
+
+
+
+/*Fin menu de navegacion*/
+
+
+/* fondo inicio */
+.titulo-parrafo-imagen,
+.titulo {
+    color: greenyellow;
+    background-color: black;
+    overflow: hidden;
+
+
+}
+
+.texto-verde,
+h1 {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    margin-left: 1.2rem;
+
+}
+
+/* Fin fondo */
+
+
+/* Inicio cards */
+.cards {
+    margin-bottom: 8rem;
+}
+
+.padre-card {
+    display: grid;
+    grid-template-columns: repeat(8, 3fr);
+    gap: 7rem;
+
+
+}
+
+@media (min-width: 768px) and (min-width: 30rem) {
+    .padre-card {
+        flex-direction: column;
+    }
+
+
+
+}
+
+
+
+
+.card-1 {
+    width: 20rem;
+    background-color: white;
+    border: 1rem solid #ffa500;
+    border-radius: 1rem;
+    margin-left: 7rem;
+
+}
+
+.card-1 h2 {
+    margin-left: 5.6rem;
+}
+
+.card-1 img {
+    width: 13rem;
+    margin-left: 2rem;
+
+}
+
+
+.card-1 p {
+    text-align: center;
+}
+
+
+
+.card-2 {
+    background-color: #ffffff;
+    width: 20rem;
+    border: 1rem solid #ffa500;
+    border-radius: 1rem;
+    display: grid;
+
+
+}
+
+
+
+
+.card-2 img {
+    width: 10rem;
+    margin-left: 3.5rem;
+    margin-top: 1rem;
+
+
+
+
+}
+
+.card-2 p {
+    text-align: center;
+    margin: 3.5rem 0 0 0;
+
+}
+
+.card-2 h3 {
+    text-align: center;
+}
+
+
+.card-3 {
+    text-align: center;
+    width: 20rem;
+    border-radius: 2rem;
+    border: 1rem solid #ffa500;
+}
+
+.card-3 img {
+    width: 15rem;
+
+
+}
+
+
+
+
+
+/* Fin cards */
+
+
+/* Inicio Tabla */
+
+.table {
+    width: 100%;
+}
+
+.titulo_rutinas {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.table,
+th,
+td {
+    border: solid .0625rem;
+    padding: 1rem;
+    border-collapse: collapse;
+    background-color: #f1f1c1;
+}
+
+
+
+
+/* Fin tabla */
+
+footer {
+    background-color: lightblue;
+
+
+
+
+}
+
+/* Inicio Pagina contacto */
+
+
+
+#formulario {
+    display: grid;
+    justify-items: center;
+
+
+
+
+
+}
+
+
+
+
+.contacto-titulo {
+    font-size: 2rem;
+    margin-bottom: 1.5em;
+    margin-left: 5rem;
+
+}
+
+.form_parrafo {
+    font-weight: 300;
+
+}
+
+.form-link {
+    color: #000;
+}
+
+form {
+    display: grid;
+    background-image: linear-gradient(to top, black, white);
+    width: 50%;
+    max-width: 50%;
+    padding: 4.5em 6em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.72);
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    overflow: hidden;
+
+
+
+}
+
+.form-contenedor {
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5;
+}
+
+.form-grupo {
+    position: relative;
+    margin: 0.400rem;
+    --color: black;
+
+}
+
+.form_input {
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid
+}
+
+.form_input:focus,
+.form_input:not(:placeholder-shown) {
+    color: #4d4646;
+}
+
+.form_input:focus+.form_label,
+.form_input:not(:placeholder-shown)+.form_label {
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #3866f2;
+}
+
+.form_label {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color 3s;
+}
+
+.submit {
+    margin: 2rem;
+    background-color: #3866f2;
+    font-weight: bolder;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+.form_line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 110%;
+    height: 1px;
+    background-color: #3866f2;
+    transform: scale(0);
+    transform: left bottom;
+    transition: 1.4s;
+}
+
+.form_input:focus~.form_line,
+.form_input:not(:placeholder-shown)~.form_line {
+    transform: scale(1);
+}
+
+
+
+
+#fondo-imagen-contacto {
+    background: url('../img/fondo-2.png');
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Fin página contacto */
+
+/* Inicio pagina Ubicación */
+
+/* imagenes */
+.imagen-padre {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
+@media (min-width: 768px) {
+    .imagen-padre {
+        display: grid;
+        grid-template-columns: repeat(1.3fr);
+    }
+    
+}
+
+@media (min-width: 320) {
+    .imagen-padre {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.imagen img {
+    margin-left: 4rem;
+    width: 261px;
+    height: 193px;
+}
+
+.imagen a {
+    margin: 0 0 0 1rem;
+}
+
+.imagen p {
+    margin-left: 1rem;
+}
+
+
+.imagen-2 {
+    margin-left: 5rem;
+}
+
+
+.imagen-3 img {
+    width: 261px;
+    height: 193px;
+    margin-left: 5rem;
+}
+
+
+
+.ubicacion {
+    margin: 0 0 0 0;
+}
+
+
+
+.titulo-1 {
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 3px 3px 3px violet;
+    margin-right: 5rem;
+}
+
+
+
+.titulo-2 {
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 3px 3px 3px violet;
+    margin-right: 6rem;
+}
+
+
+
+.titulo-3 {
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 3px 3px 3px violet;
+    margin-right: 3rem;
+
+}
+
+/* Fin página de Ubicación */
+
+/* inicio pagina nosotros */
+
+#azul {
+    background-color: #248bca;
+}
+
+.foto-1 img {}
